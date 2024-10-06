@@ -1,9 +1,9 @@
 // Function to check the user's answer
 function checkAnswer() {
-    // Define the correct answer
+    // Define the correct answer as a string
     const correctAnswer = "4";
     
-    // Get the selected answer
+    // Get the selected answer (radio button that is checked)
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
     
     // Get the feedback element
@@ -11,7 +11,7 @@ function checkAnswer() {
     
     // Check if an answer is selected
     if (userAnswer) {
-        // Compare the selected answer with the correct one
+        // Compare the selected answer's value with the correct answer
         if (userAnswer.value === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
             feedback.style.color = "green";
