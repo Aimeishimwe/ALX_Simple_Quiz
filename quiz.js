@@ -9,10 +9,10 @@ function checkAnswer() {
     // Check if the user has selected an answer
     if (userAnswer) {
         // Get the value of the selected answer
-        const answerValue = userAnswer.value;
+        const userAnswer = userAnswer.value;
 
         // Compare the user's answer with the correct answer
-        if (answerValue === correctAnswer) {
+        if (userAnswer === correctAnswer) {
             // If correct, display a success message
             document.getElementById("feedback").textContent = "Correct! Well done.";
         } else {
