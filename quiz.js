@@ -4,12 +4,12 @@ function checkAnswer() {
     const correctAnswer = "4";
     
     // Retrieve the user's answer by selecting the checked radio button
-    const userAnswer = document.querySelector('input[name="quiz"]:checked');
+    const userAnswerElement = document.querySelector('input[name="quiz"]:checked');
 
     // Check if the user has selected an answer
-    if (userAnswer) {
+    if (userAnswerElement) {
         // Get the value of the selected answer
-        const userAnswer = userAnswer.value;
+        const userAnswer = userAnswerElement.value; // Use userAnswerElement instead
 
         // Compare the user's answer with the correct answer
         if (userAnswer === correctAnswer) {
